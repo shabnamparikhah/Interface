@@ -6,6 +6,7 @@ public class songImplement implements Isong {
     private String album;
     private int rating;
     private int year;
+
     @Override
     public long getId() {
         return 0;
@@ -64,5 +65,8 @@ public class songImplement implements Isong {
     @Override
     public void setYear(int value) {
         this.year = value;
+    }
+    public String displaySong() {
+        return getName() + "" + getAlbum();
     }
 }
